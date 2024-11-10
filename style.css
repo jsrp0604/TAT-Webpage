@@ -43,6 +43,12 @@ h2  {
     margin: 20px 0px;
 }
 
+h4  {
+    font-family: 'Hatton', sans-serif;
+    font-size: 30px;
+    margin: 25px; 
+}
+
 .header-links   {
     list-style-type: none;
     display: flex;
@@ -103,14 +109,68 @@ a   {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20px;
+    padding: 30px 55px;
     gap: 60px;
 }
 
+.text-align-center  {
+    text-align: center;
+}
+
+.justify-flex-start {
+    justify-content: flex-start;
+}
+
+.justify-flex-end   {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.padding-small    {
+    padding: 20px 20px;
+}
+
+.align-flex-start    {
+    align-items: flex-start;
+}
+
+.padding-top-none   {
+    padding-top: 0px;
+}
+
 .texto-imagen p, 
-.texto-imagen ul   {
+.texto-imagen ul,
+.texto-imagen h3   {
     font-family: 'TT Commons', sans-serif;
-    font-size: 25px;
+    font-size: 27px;
+}
+
+.texto-imagen h2    {
+    background-color: #ebebeb;
+    margin: 0px;
+}
+
+.texto-imagen h3    {
+    font-weight: bold;
+}
+
+.div-letra,
+.div-letra-texto  {
+    font-family: 'Hatton', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    background-color: #e7d7c9;
+    align-self: flex-start;
+    border: solid 4px black;
+    padding: 5px 30px;
+    padding-top: 15px;
+}
+
+.div-letra-texto    {
+    margin-top: 30px;
 }
 
 .laminas-tat    {
@@ -157,3 +217,4 @@ a   {
     font-size: 18px;
     margin: 5px 0px;
 }
+
