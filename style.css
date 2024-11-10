@@ -102,7 +102,8 @@ a   {
     cursor: pointer;
 }
 
-.texto-imagen {
+.texto-imagen,
+.texto-imagen-block {
     color: #312107;
     background-color: #ebebeb;
     font-family: 'TT Commons', sans-serif;
@@ -111,6 +112,10 @@ a   {
     align-items: center;
     padding: 30px 55px;
     gap: 60px;
+}
+
+.texto-imagen-block {
+    display: block;
 }
 
 .text-align-center  {
@@ -141,11 +146,15 @@ a   {
     padding-top: 0px;
 }
 
-.texto-imagen p, 
-.texto-imagen ul,
-.texto-imagen h3   {
+.texto-imagen p, .texto-imagen-block p,
+.texto-imagen ul, .texto-imagen-block ul 
+.texto-imagen h3, .texto-imagen-block h3   {
     font-family: 'TT Commons', sans-serif;
     font-size: 27px;
+}
+
+.texto-imagen-block p   {
+    margin: 50px 0px;
 }
 
 .texto-imagen h2    {
