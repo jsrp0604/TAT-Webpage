@@ -147,7 +147,7 @@ a   {
 }
 
 .texto-imagen p, .texto-imagen-block p,
-.texto-imagen ul, .texto-imagen-block ul 
+.texto-imagen ul, .texto-imagen-block ul, 
 .texto-imagen h3, .texto-imagen-block h3   {
     font-family: 'TT Commons', sans-serif;
     font-size: 27px;
@@ -226,4 +226,3 @@ a   {
     font-size: 18px;
     margin: 5px 0px;
 }
-
