@@ -1,23 +1,32 @@
 const btnPlantillas = document.getElementById("btnPlantillas");
+const btnManual = document.getElementById("btnManual")
 
-btnPlantillas.addEventListener("click", () => {
-    const fileURL = "img/laminas-tat.pdf";
-    const a = document.createElement("a");
+const filePlantillas = "laminas-tat.pdf";
+const fileManual = "TAT-Manual-de-aplicacion.pdf"; 
 
-    fetch(fileURL)
-        .then(response => response.blob())
-        .then(blob => {
-            const downloadURL = URL.createObjectURL(blob);
+addDownloadLink(btnPlantillas, filePlantillas);
+addDownloadLink(btnManual, fileManual);
 
-            a.href = fileURL;
-            a.download = "laminas-tat.pdf";
-            a.style.display = "none";
-
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-
-            URL.revokeObjectURL(downloadURL);
-        })
-        .catch(error => console.error("Falló la descarga", error));
-});
+function addDownloadLink(btn, file)   {
+    btn.addEventListener("click", () => {
+        const fileURL = `files/${file}`;
+        const a = document.createElement("a");
+    
+        fetch(fileURL)
+            .then(response => response.blob())
+            .then(blob => {
+                const downloadURL = URL.createObjectURL(blob);
+    
+                a.href = fileURL;
+                a.download = `${file}`;
+                a.style.display = "none";
+    
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+    
+                URL.revokeObjectURL(downloadURL);
+            })
+            .catch(error => console.error("Falló la descarga", error));
+    });
+}

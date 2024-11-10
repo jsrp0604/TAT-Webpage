@@ -8,11 +8,17 @@ html    {
 }
 
 body    {
+    background-color: #ebebeb;
     height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0px;
     padding: 0px;
+}
+
+/* anotar para commit */
+.div-margin {
+    margin-top: 30px;
 }
 
 .header,
@@ -91,7 +97,8 @@ a   {
     margin-bottom: 60px;
 }
 
-.hero button    {
+.hero button,
+#historia button    {
     color: #312107;
     background-color: #ebebeb;
     font-family: 'TT Commons', sans-serif;
@@ -100,6 +107,16 @@ a   {
     width: 180px;
     padding: 10px;
     cursor: pointer;
+}
+
+#historia button        {
+    font-size: 20px;
+    border: solid 2px #312107;
+    width: 100%;
+}
+
+.nested-list, .nested-list *  {
+    font-size: 21px;
 }
 
 .texto-imagen,
@@ -142,13 +159,31 @@ a   {
     align-items: flex-start;
 }
 
+.align-self-flex-start  {
+    align-self: flex-start;
+}
+
+.align-self-stretch    {
+    align-self: stretch;
+}
+
 .padding-top-none   {
     padding-top: 0px;
 }
 
+.width-equal-in-thirds  {
+    width: 30%;
+}
+
+.flex-column-space-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
 .texto-imagen p, .texto-imagen-block p,
 .texto-imagen ul, .texto-imagen-block ul, 
-.texto-imagen h3, .texto-imagen-block h3   {
+.texto-imagen h3, .texto-imagen-block h3, ol   {
     font-family: 'TT Commons', sans-serif;
     font-size: 27px;
 }
