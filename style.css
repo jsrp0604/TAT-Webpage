@@ -135,52 +135,6 @@ a   {
     display: block;
 }
 
-.text-align-center  {
-    text-align: center;
-}
-
-.justify-flex-start {
-    justify-content: flex-start;
-}
-
-.justify-flex-end   {
-    justify-content: flex-end;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.padding-small    {
-    padding: 20px 20px;
-}
-
-.align-flex-start    {
-    align-items: flex-start;
-}
-
-.align-self-flex-start  {
-    align-self: flex-start;
-}
-
-.align-self-stretch    {
-    align-self: stretch;
-}
-
-.padding-top-none   {
-    padding-top: 0px;
-}
-
-.width-equal-in-thirds  {
-    width: 30%;
-}
-
-.flex-column-space-between {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-}
-
 .texto-imagen p, .texto-imagen-block p,
 .texto-imagen ul, .texto-imagen-block ul, 
 .texto-imagen h3, .texto-imagen-block h3, ol   {
@@ -199,6 +153,67 @@ a   {
 
 .texto-imagen h3    {
     font-weight: bold;
+}
+
+#materiales {
+    position: relative;
+}
+
+.multiple-img-background  {
+    display: flex;
+    padding: 35px 55px;
+    position: relative;
+    z-index: 1;
+}
+
+.multiple-img-background img  {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+.content-multiple-img-background   {
+    position: absolute;  
+    top: 4%;
+    left: 0;
+    right: 8%;
+    height: 100%;
+    padding: 90px 165px;
+    z-index: 2;
+}
+
+.content-multiple-img {
+    width: 100%;
+    color:#fffdf5;
+    background-color: rgba(207, 175, 140, 0.7);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 55px;
+    overflow: auto;
+}
+
+.content-multiple-img div {
+    max-width: 45%;
+}
+
+.content-multiple-img h2  {
+    font-family: 'Hatton', sans-serif;
+    text-align: center;
+}
+
+.content-multiple-img p,
+.content-multiple-img ul  {
+    font-family: 'TT Commons', sans-serif;
+    font-size: 20px;
+}
+
+.consigna h3    {
+    font-family: 'TT Commons', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .div-letra,
@@ -260,4 +275,50 @@ a   {
     font-family: 'TT Commons', sans-serif;
     font-size: 18px;
     margin: 5px 0px;
+}
+
+.text-align-center  {
+    text-align: center;
+}
+
+.justify-flex-start {
+    justify-content: flex-start;
+}
+
+.justify-flex-end   {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.padding-small    {
+    padding: 20px 20px;
+}
+
+.align-flex-start    {
+    align-items: flex-start;
+}
+
+.align-self-flex-start  {
+    align-self: flex-start;
+}
+
+.align-self-stretch    {
+    align-self: stretch;
+}
+
+.padding-top-none   {
+    padding-top: 0px;
+}
+
+.width-equal-in-thirds  {
+    width: 30%;
+}
+
+.flex-column-space-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
