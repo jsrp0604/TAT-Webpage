@@ -180,7 +180,8 @@ a   {
     object-fit: cover;
 }
 
-.content-multiple-img-background   {
+.content-multiple-img-background,
+.elaboración-content-multiple-img-background   {
     position: absolute;  
     left: 0;
     right: 8%;
@@ -188,6 +189,11 @@ a   {
     transform: translateY(0%);
     padding: 5% 10%;
     z-index: 2;
+}
+
+.elaboración-content-multiple-img-background    {
+    transform: translateY(-7%);
+    padding: 7% 10%;
 }
 
 .casos-content-multiple-img-background  {
@@ -231,7 +237,9 @@ a   {
 }
 
 .content-multiple-img h2,
-.casos-content-multiple-img h2  {
+.casos-content-multiple-img h2,
+.elaboración-content-multiple-img-background h2  {
+    color:#fffdf5;
     font-family: 'Hatton', sans-serif;
     text-align: center;
 }
@@ -241,7 +249,7 @@ a   {
 }
 
 .content-multiple-img p, .casos-content-multiple-img p, 
-.content-multiple-img ul  {
+.content-multiple-img ul, .content-multiple-img ol  {
     font-family: 'TT Commons', sans-serif;
     font-size: 19px;
 }
