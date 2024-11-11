@@ -81,12 +81,12 @@ a   {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 145px 150px;
+    padding: 145px 100px;
 }
 
 .hero-title {
     font-family: 'Hatton', sans-serif;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: normal;
     margin: 10px;
 }
@@ -159,7 +159,8 @@ a   {
     position: relative;
 }
 
-.multiple-img-background  {
+.multiple-img-background,
+.consigna-multiple-img-background  {
     display: flex;
     padding: 35px 55px;
     position: relative;
@@ -169,16 +170,16 @@ a   {
 .multiple-img-background img  {
     width: 50%;
     height: auto;
-    display: block;
+    object-fit: cover;
 }
 
 .content-multiple-img-background   {
     position: absolute;  
-    top: 4%;
     left: 0;
     right: 8%;
     height: 100%;
-    padding: 90px 165px;
+    transform: translateY(2%);
+    padding: 5% 10%;
     z-index: 2;
 }
 
@@ -206,7 +207,7 @@ a   {
 .content-multiple-img p,
 .content-multiple-img ul  {
     font-family: 'TT Commons', sans-serif;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .consigna h3    {
@@ -214,6 +215,52 @@ a   {
     font-size: 17px;
     font-weight: bold;
     text-align: center;
+}
+
+.consigna-texto {
+    flex: 1;
+    max-width: 40%;
+}
+
+.consigna-texto h4, 
+.consigna-texto p  {
+    font-family: 'Hatton', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.consigna-texto p   {
+    font-family: 'TT Commons', sans-serif;
+    font-size: 16px;
+}
+
+.consigna-multiple-img-background   {
+    justify-content: space-between;
+}
+
+.consigna-multiple-img-background img   {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.consigna-content   {
+    position: absolute;  
+    left: 0;
+    right: 0;
+    height: 100%;
+    transform: translateY(-10%);
+    padding: 5% 10%;
+    z-index: 2;
+}
+
+.consigna-colored   {
+    background-color: rgba(207, 175, 140, 0.5);
+    padding: 20px 30px;
+    margin: 5px auto;
+    z-index: 3;
 }
 
 .div-letra,
@@ -321,4 +368,39 @@ a   {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
+}
+
+.flex-row-space-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-row-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* Add media queries for different screen sizes */
+@media screen and (max-width: 768px) {
+    .materiales-content {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        text-align: center;
+    }
+    
+    .materiales-content-background {
+        padding: 20px; /* Smaller padding on mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .materiales-background {
+        flex-direction: column; /* Stack images vertically on very small screens */
+    }
+    
+    .materiales-background img {
+        width: 100%; /* Full width on mobile */
+    }
 }
