@@ -98,7 +98,8 @@ a   {
 }
 
 .hero button,
-#historia button    {
+#historia button,
+.casos-button {
     color: #312107;
     background-color: #ebebeb;
     font-family: 'TT Commons', sans-serif;
@@ -107,6 +108,12 @@ a   {
     width: 180px;
     padding: 10px;
     cursor: pointer;
+}
+
+.casos-button   {
+    font-size: 22px;
+    width: 220px;
+    padding: 15px;
 }
 
 #historia button        {
@@ -183,6 +190,17 @@ a   {
     z-index: 2;
 }
 
+.casos-content-multiple-img-background  {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: -2%;
+    left: 8%;
+    right: 0%;
+    height: 100%;
+    z-index: 2;
+}
+
 .content-multiple-img {
     width: 100%;
     color:#fffdf5;
@@ -195,19 +213,41 @@ a   {
     overflow: auto;
 }
 
-.content-multiple-img div {
+.casos-content-multiple-img {
+    color:#fffdf5;
+    background-color: rgba(207, 175, 140, 0.7);
+    font-weight: bold;
+    padding: 20px 40px;
+    min-width: 100%;
+}
+
+.content-multiple-img div,
+.casos-content-multiple-img-background div {
     max-width: 45%;
 }
 
-.content-multiple-img h2  {
+.casos-content-multiple-img-background div  {
+    min-width: 45%;
+}
+
+.content-multiple-img h2,
+.casos-content-multiple-img h2  {
     font-family: 'Hatton', sans-serif;
     text-align: center;
 }
 
-.content-multiple-img p,
+.casos-content-multiple-img h2  {
+    font-size: 55px;
+}
+
+.content-multiple-img p, .casos-content-multiple-img p, 
 .content-multiple-img ul  {
     font-family: 'TT Commons', sans-serif;
     font-size: 19px;
+}
+
+.casos-content-multiple-img p   {
+    font-size: 22px;
 }
 
 .consigna h3    {
@@ -397,6 +437,13 @@ a   {
     justify-content: space-between; 
 }
 
+.flex-column-center    {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .flex-row-space-around {
     display: flex;
     flex-direction: row;
@@ -408,6 +455,8 @@ a   {
     flex-direction: row;
     justify-content: space-between;
 }
+
+
 
 
 /* Add media queries for different screen sizes */
