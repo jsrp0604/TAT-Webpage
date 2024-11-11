@@ -347,7 +347,9 @@ a   {
 }
 
 .div-letra-texto    {
-    margin-top: 30px;
+    padding: 5px 10px;
+    padding-top: 15px;
+    padding-right: 20px;
 }
 
 .laminas-tat    {
@@ -443,6 +445,12 @@ a   {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
+}
+
+.flex-column-space-around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
 }
 
 .flex-column-center    {
