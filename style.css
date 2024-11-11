@@ -178,7 +178,7 @@ a   {
     left: 0;
     right: 8%;
     height: 100%;
-    transform: translateY(2%);
+    transform: translateY(0%);
     padding: 5% 10%;
     z-index: 2;
 }
@@ -191,7 +191,7 @@ a   {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 55px;
+    padding: 20px 40px;
     overflow: auto;
 }
 
@@ -225,14 +225,14 @@ a   {
 .consigna-texto h4, 
 .consigna-texto p  {
     font-family: 'Hatton', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
 
 .consigna-texto p   {
     font-family: 'TT Commons', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .consigna-multiple-img-background   {
@@ -261,6 +261,29 @@ a   {
     padding: 20px 30px;
     margin: 5px auto;
     z-index: 3;
+}
+
+.analisis-tat   {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 55px;
+}
+
+.analisis-tat-content   {
+    font-family: 'Hatton', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+.analisis-tat-content h2  {
+    color: #a27304;
+    font-size: 45px;
+    text-align: center;
+}
+
+.analisis-tat img   {
+    align-self: center;
 }
 
 .div-letra,
@@ -354,6 +377,10 @@ a   {
 
 .align-self-stretch    {
     align-self: stretch;
+}
+
+.align-self-center  {
+    align-self: center;
 }
 
 .padding-top-none   {
