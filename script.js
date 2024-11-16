@@ -42,3 +42,12 @@ function addDownloadLink(btn, file)   {
             .catch(error => console.error("Falló la descarga", error));
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const dropdownMenu = document.getElementById("dropdown-menu");
+  
+    menuToggle.addEventListener("click", () => {
+      dropdownMenu.classList.toggle("active");
+    });
+});
