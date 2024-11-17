@@ -280,6 +280,10 @@ a   {
     overflow: auto;
 }
 
+#materiales-hidden  {
+    display: none;
+}
+
 .casos-content-multiple-img {
     color:#fffdf5;
     background-color: rgba(207, 175, 140, 0.7);
@@ -633,5 +637,53 @@ a   {
 
     .nested-list    {
         padding: 0px 40px;
+    }
+
+    .multiple-img-background    {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .multiple-img-background img {
+        width: 450px;
+        height: auto;
+    }
+
+    .content-multiple-img-background    {
+        right: 0;
+        transform: translateY(1%);
+    }
+
+    .content-multiple-img   {
+        flex-direction: column;
+        max-width: fit-content;
+        padding: 20px;
+    }
+
+    .content-multiple-img h2    {
+        margin-bottom: 5px;
+    }
+
+    .content-multiple-img ul    {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
+
+    .content-multiple-img p {
+        font-size: 17px;
+    }
+
+    .content-multiple-img div {
+        max-width: fit-content;
+    }
+
+    #materiales-title  {
+        display: none;
+    }
+
+    #materiales-hidden  {
+        display: block;
     }
 }
