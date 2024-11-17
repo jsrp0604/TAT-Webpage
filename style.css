@@ -160,6 +160,10 @@ a   {
     cursor: pointer;
 }
 
+#objetivo-hidden-img    {
+    display: none;
+}
+
 .casos-button   {
     font-size: 22px;
     width: 220px;
@@ -172,6 +176,10 @@ a   {
     width: 100%;
 }
 
+.nested-list    {
+    padding-right: 20px;
+}
+
 .nested-list, .nested-list *  {
     font-size: 21px;
 }
@@ -181,6 +189,9 @@ a   {
     color: #312107;
     background-color: #ebebeb;
     font-family: 'TT Commons', sans-serif;
+    /* Justificado */
+    text-align: justify;
+    text-justify: inter-word;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -549,6 +560,10 @@ a   {
 
 
 @media screen and (max-width: 768px)    {
+    .div-margin {
+        padding: 0px 15px;
+    }
+
     .header {
         justify-content: flex-start;
         padding-right: 19%;
@@ -575,7 +590,48 @@ a   {
         padding: 10px;
     }
 
+    .header-two .header-title   {
+        display: none;
+    }
+
     .hero {
         text-align: center;
+    }
+
+    .texto-imagen   {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #objetivo-img   {
+        display: none;
+    }
+
+    #objetivo-hidden-img    {
+        display: block;
+    }
+
+    .texto-imagen h2    {
+        margin-top: 45px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .texto-imagen p,
+    .texto-imagen ul {
+        font-size: 25px;
+        margin-bottom: 35px;;
+    }
+
+    .width-equal-in-thirds  {
+        width: fit-content;
+    }
+
+    #historia-img {
+        width: 400px;
+    }
+
+    .nested-list    {
+        padding: 0px 40px;
     }
 }
