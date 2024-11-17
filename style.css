@@ -570,7 +570,7 @@ a   {
 
     .header {
         justify-content: flex-start;
-        padding-right: 19%;
+        padding-right: 30%;
     }
 
     .header-title   {
@@ -604,7 +604,7 @@ a   {
 
     .texto-imagen   {
         flex-direction: column;
-        padding: 20px;
+        padding: 10%;
     }
 
     #objetivo-img   {
@@ -613,12 +613,18 @@ a   {
 
     #objetivo-hidden-img    {
         display: block;
+        width: 350px;
+    }
+
+    #objetivo-fundamentos-img   {
+        width: 350px;
     }
 
     .texto-imagen h2    {
         margin-top: 45px;
         margin-bottom: 20px;
         text-align: center;
+        font-size: 40px;
     }
 
     .texto-imagen p,
@@ -632,11 +638,11 @@ a   {
     }
 
     #historia-img {
-        width: 400px;
+        width: 350px;
     }
 
     .nested-list    {
-        padding: 0px 40px;
+        padding: 0px 30px;
     }
 
     .multiple-img-background    {
@@ -646,33 +652,37 @@ a   {
     }
 
     .multiple-img-background img {
-        width: 450px;
-        height: auto;
+        width: 350px;
+        height: 400px;
     }
 
     .content-multiple-img-background    {
-        right: 0;
+        right: 7%;
         transform: translateY(1%);
     }
 
     .content-multiple-img   {
         flex-direction: column;
         max-width: fit-content;
-        padding: 20px;
+        padding: 30px;
+        text-align: justify;
     }
 
     .content-multiple-img h2    {
         margin-bottom: 5px;
+        font-size: 35px;
     }
 
     .content-multiple-img ul    {
-        font-size: 16px;
+        font-size: 13px;
         margin-top: 5px;
         margin-bottom: 7px;
+        padding-left: 20px;
     }
 
     .content-multiple-img p {
-        font-size: 17px;
+        font-size: 13px;
+        margin: 7px 0px;
     }
 
     .content-multiple-img div {
