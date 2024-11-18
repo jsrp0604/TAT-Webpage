@@ -669,7 +669,7 @@ a   {
 
     .multiple-img-background img {
         width: 350px;
-        height: 400px;
+        height: 425px;
     }
 
     .content-multiple-img-background    {
@@ -829,5 +829,32 @@ a   {
     #analisis-img   {
         width: 350px;
         height: 400px;
+    }
+
+    /* Análisis Tat */
+
+    #analisis-tat   {
+        flex-direction: column;
+    }
+
+    .analisis-tat-content   {
+        text-align: center;
+        padding: 0px 10px;
+    }
+
+    .analisis-tat-content h2 {
+        font-size: 40px;
+    }
+
+    .analisis-tat-content p,
+    .analisis-tat-content h3,
+    .analisis-tat-content ul {
+        font-size: 18px;
+    }
+
+    #analisis-tat img   {
+        width: 350px;
+        height: 400px;
+        margin: 40px 0px;
     }
 }
