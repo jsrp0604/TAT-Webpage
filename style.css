@@ -232,6 +232,11 @@ a   {
     position: relative;
 }
 
+#administración-hidden-img-1,
+#administración-hidden-img-2    {
+    display: none;
+}
+
 .multiple-img-background,
 .consigna-multiple-img-background  {
     display: flex;
@@ -716,7 +721,49 @@ a   {
 
     /* Administración */
 
+    #administración h2 {
+        font-size: 32px;
+    }
+
+    #administración div {
+        align-self: center;
+    }
+
+    #administración img {
+        width: 350px;
+        height: 400px;
+    }
+
+    #administración ul {
+        padding: 0px 30px;
+    }
+
+    #administración-hidden-img-1,
+    #administración-hidden-img-2    {
+        display: block;
+    }
+
+    #administración-img-div {
+        display: none;
+    }
+
+
     /* Procedimientos e Instrucciones */
+
+    #procedimientos-e-instrucciones h2 {
+        font-size: 36px;
+        margin: 20px 0px;
+    }
+
+    #procedimientos-e-instrucciones img {
+        width: 350px;
+        height: 400px;
+    }
+
+    #procedimientos-e-instrucciones ul {
+        padding: 10px 30px;
+        padding-left: 40px;
+    }
 
     /* Consigna */
 
