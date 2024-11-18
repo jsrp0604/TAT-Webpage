@@ -881,6 +881,10 @@ a   {
 
     /* Letras Clave */
 
+    #letras-claves  {
+        margin-top: 0px;
+    }
+
     .div-letra-dual {
         flex-direction: row;
     }
@@ -892,5 +896,15 @@ a   {
 
     .div-sexo-edad ul {
         font-size: 28px;
+    }
+
+    /* Bibliografía */
+
+    #bibliografia   {
+        word-wrap: break-word;
+    }
+
+    #bibliografia p {
+        font-size: 20px;
     }
 }
