@@ -857,4 +857,40 @@ a   {
         height: 400px;
         margin: 40px 0px;
     }
+
+    /* Métodos de Análisis */
+    #metodos-de-analisis .texto-imagen  {
+        padding: 5% 10%;
+    }
+
+    #metodos-de-analisis-img-1,
+    #metodos-de-analisis-img-2,
+    #metodos-de-analisis-img-3,
+    #metodos-de-analisis-img-4,
+    #metodos-de-analisis-img-5    {
+        width: 350px;
+    }
+
+    #metodos-de-analisis-div-flex-start    {
+        align-items: center;
+    }
+
+    #metodos-de-analisis-div-flex-start div    {
+        padding: 5% 10%;
+    }
+
+    /* Letras Clave */
+
+    .div-letra-dual {
+        flex-direction: row;
+    }
+
+    .div-letras-grande  {
+        align-self: center;
+        padding: 0% 10%;
+    }
+
+    .div-sexo-edad ul {
+        font-size: 28px;
+    }
 }
