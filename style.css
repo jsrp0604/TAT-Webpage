@@ -549,28 +549,26 @@ a   {
 
 
 
-
-/* Add media queries for different screen sizes */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .materiales-content {
-        flex-direction: column; /* Stack content vertically on smaller screens */
+        flex-direction: column; 
         text-align: center;
     }
     
     .materiales-content-background {
-        padding: 20px; /* Smaller padding on mobile */
+        padding: 20px; 
     }
 }
 
 @media screen and (max-width: 480px) {
     .materiales-background {
-        flex-direction: column; /* Stack images vertically on very small screens */
+        flex-direction: column; 
     }
     
     .materiales-background img {
-        width: 100%; /* Full width on mobile */
+        width: 100%; 
     }
-}
+} */
 
 
 @media screen and (max-width: 768px)    {
@@ -779,7 +777,7 @@ a   {
 
     .consigna-multiple-img-background img   {
         width: 350px;
-        height: 575px;
+        height: 600px;
         margin-bottom: 50px;
     }
 
@@ -942,7 +940,8 @@ a   {
     }
 
     .div-sexo-edad ul {
-        font-size: 28px;
+        font-size: 26px;
+        text-align: start;
     }
 
     /* Bibliografía */
@@ -953,5 +952,31 @@ a   {
 
     #bibliografia p {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 360px)    {
+    .consigna-multiple-img-background img   {
+        height: 625px;
+    }
+
+    .consigna-colored   {
+        position: absolute;
+        right: 7%;
+        transform: translateY(-115%);
+        max-width: 70%;
+    }
+
+    .casos-content-multiple-img-background  {
+        gap: 120px;
+    }
+
+    #casos-image,
+    #casos-image-2    {
+        height: 475px;
+    }
+
+    #elaboración-img    {
+        height: 525px;
     }
 }
