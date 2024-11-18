@@ -3,6 +3,11 @@
     src: url("fonts/PPHatton-Ultralight.otf") format("opentype");
 }
 
+@font-face {
+    font-family: TT Commons;
+    src: url("fonts/TT\ Commons\ Regular.otf") format("opentype");
+}
+
 html    {
     scroll-behavior: smooth;
 }
@@ -568,9 +573,11 @@ a   {
         padding: 0px 15px;
     }
 
+    /* Header */
+
     .header {
         justify-content: flex-start;
-        padding-right: 30%;
+        padding-right: 35%;
     }
 
     .header-title   {
@@ -598,9 +605,13 @@ a   {
         display: none;
     }
 
+    /* Hero */
+
     .hero {
         text-align: center;
     }
+
+    /* Objetivo */
 
     .texto-imagen   {
         flex-direction: column;
@@ -633,6 +644,8 @@ a   {
         margin-bottom: 35px;;
     }
 
+    /* Historia */
+
     .width-equal-in-thirds  {
         width: fit-content;
     }
@@ -645,7 +658,10 @@ a   {
         padding: 0px 30px;
     }
 
-    .multiple-img-background    {
+    /* Materiales */
+
+    .multiple-img-background,
+    .consigna-multiple-img-background    {
         flex-direction: column;
         align-items: center;
         padding: 20px;
@@ -695,5 +711,123 @@ a   {
 
     #materiales-hidden  {
         display: block;
+        margin-top: 10px;
+    }
+
+    /* Administración */
+
+    /* Procedimientos e Instrucciones */
+
+    /* Consigna */
+
+    .text-align-center h2    {
+        font-size: 40px;
+    }
+
+    .consigna-multiple-img-background   {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .consigna-multiple-img-background img   {
+        width: 350px;
+        height: 575px;
+        margin-bottom: 50px;
+    }
+
+    .consigna-content .flex-row-space-between   {
+        flex-direction: column;
+    }
+
+    .consigna-texto {
+        max-width: fit-content;
+    }
+
+    .consigna-texto p {
+        font-size: 13px;
+    }
+
+    .consigna-texto h4 {
+        font-size: 15px;
+    }
+
+    .consigna-content   {
+        transform: translateY(-4%);
+    }
+
+    .consigna-colored   {
+        position: absolute;
+        right: 7%;
+        transform: translateY(-150%);
+        max-width: 70%;
+    }
+
+    /* Casos */
+
+    #casos-image,
+    #casos-image-2    {
+        height: 450px;
+    }
+
+    .casos-content-multiple-img-background {
+        flex-direction: column;
+        top: 7%;
+        left: 0%;
+        gap: 80px;
+    }
+
+    .casos-content-multiple-img {
+        padding: 20px 20px;
+    }
+
+    .casos-content-multiple-img h2 {
+        font-size: 33px;
+    }
+
+    .casos-content-multiple-img p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .casos-content-multiple-img-background div  {
+        max-width: 90%;
+    }
+
+    /* Elaboración */
+
+    .elaboración-content-multiple-img-background {
+        transform: translateY(0%);
+        padding: 7% 5%;
+        right: 2%;
+    }
+
+    #elaboración-img    {
+        height: 450px;
+    }
+
+    .elaboración-content-multiple-img-background h2 {
+        font-size: 35px;
+    }
+
+    .content-multiple-img ol {
+        font-size: 13px;
+    }
+
+    /* Análisis e Interpretación */
+
+    #analisis-e-interpretacion h2   {
+        font-size: 38px;
+        margin: 20px;
+    }
+
+    #analisis-e-interpretacion ul   {
+        font-size: 22px;
+        padding: 0px 40px;
+    }
+
+    #analisis-img   {
+        width: 350px;
+        height: 400px;
     }
 }
